@@ -1,8 +1,5 @@
-node_modules/
-dist/
-.vscode/
+node_modules
+dist
+.vite
+.git
 .env
-.venv/
-.DS_Store
-*.log
-npm-debug.log
