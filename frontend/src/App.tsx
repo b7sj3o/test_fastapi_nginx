@@ -32,12 +32,13 @@ function App() {
     setLoading(true);
     setMessage(null);
     try {
-      const response = await axios.post('/items/create', { name, price });
+      await axios.post('/items/create', { name, price });
       setName('');
       setPrice(0);
       setIsCreated(!isCreated);
       setMessage('Item added successfully!');
     } catch (error) {
+      console.log(error)
       setMessage('Failed to add item.');
     } finally {
       setLoading(false);
@@ -54,6 +55,7 @@ function App() {
       setIsCreated(!isCreated);
     }
     catch (error) {
+      console.log(error)
       setMessage('Failed to delete item.');
     }
     finally {
