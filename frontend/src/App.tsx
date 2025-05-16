@@ -8,7 +8,7 @@ interface Item {
   price: number
 }
 
-axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = 'http://185.227.108.139/api'
 
 
 function App() {
