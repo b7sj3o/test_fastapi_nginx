@@ -51,7 +51,7 @@ def delete_item(item_id: int):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "http://185.227.108.139/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
