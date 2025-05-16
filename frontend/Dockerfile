@@ -1,6 +1,6 @@
-FROM node:alpine as build
+FROM node:18-slim AS build
 
-COPY package.json package.json
+COPY package*.json .
 RUN npm install
 COPY . .
 RUN npm run build
